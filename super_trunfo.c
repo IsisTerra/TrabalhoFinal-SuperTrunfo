@@ -3,50 +3,50 @@
 int main()
 {
     // Variáveis definidas para cada atributo das duas cartas
-    char estado = 'B', estado2 = 'D';
-    char codigo[4] = "B02", codigo2[4] = "C03";
-    char cidade[50] = "Salvador", cidade2[50] = "Recife";
-    int populacao = 2418005, populacao2 = 1488920;
-    float area = 305.175, area2 = 218.435;
-    float pib = 62, pib2 = 54;
-    int turismo = 78, turismo2 = 63;
+    char estado, estado2;
+    char codigo[4], codigo2[4];
+    char cidade[50], cidade2[50];
+    int populacao, populacao2;
+    float area, area2;
+    float pib, pib2;
+    int turismo, turismo2;
     float densPop, densPop2;
 
     printf("***Bem vindo ao Super Trunfo!***\n");
 
-    // // Informações da primeira carta:
-    // printf("Por favor, insira os dados da sua primeira carta como solicitado\n\n"); // Orientações ao usuário
-    // printf("Insira a letra, de 'A' a 'H': ");
-    // scanf(" %c", &estado); // Espaço para que o enter não seja lido como o caractere escolhido
-    // printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
-    // scanf("%s", &codigo);
-    // printf("O nome da cidade: ");
-    // scanf("%s", &cidade);
-    // printf("O número de habitantes da cidade: ");
-    // scanf("%d", &populacao);
-    // printf("A área da cidade em quilômetros quadrados: ");
-    // scanf("%f", &area);
-    // printf("O Produto Interno Bruto da cidade (em bilhões de reais): ");
-    // scanf("%f", &pib);
-    // printf("A quantidade de pontos turísticos na cidade: ");
-    // scanf("%d", &turismo);
+    // Informações da primeira carta:
+    printf("Por favor, insira os dados da sua primeira carta como solicitado\n\n"); // Orientações ao usuário
+    printf("Insira a letra, de 'A' a 'H': ");
+    scanf(" %c", &estado); // Espaço para que o enter não seja lido como o caractere escolhido
+    printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
+    scanf("%s", &codigo);
+    printf("O nome da cidade: ");
+    scanf("%s", &cidade);
+    printf("O número de habitantes da cidade: ");
+    scanf("%d", &populacao);
+    printf("A área da cidade em quilômetros quadrados: ");
+    scanf("%f", &area);
+    printf("O Produto Interno Bruto da cidade (em bilhões de reais): ");
+    scanf("%f", &pib);
+    printf("A quantidade de pontos turísticos na cidade: ");
+    scanf("%d", &turismo);
 
-    // // Informações da segunda carta:
-    // printf("Dados salvos.\n\n Agora, insira os dados da sua segunda carta\n\n");
-    // printf("Insira uma letra de 'A' a 'H': ");
-    // scanf(" %c", &estado2); // Espaço para que o enter não seja lido como o caractere escolhido
-    // printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
-    // scanf("%s", &codigo2);
-    // printf("O nome da cidade: ");
-    // scanf("%s", &cidade2);
-    // printf("O número de habitantes da cidade: ");
-    // scanf("%d", &populacao2);
-    // printf("A área da cidade em quilômetros quadrados: ");
-    // scanf("%f", &area2);
-    // printf("O Produto Interno Bruto da cidade (em bilhões de reais): ");
-    // scanf("%f", &pib2);
-    // printf("A quantidade de pontos turísticos na cidade: ");
-    // scanf("%d", &turismo2);
+    // Informações da segunda carta:
+    printf("Dados salvos.\n\n Agora, insira os dados da sua segunda carta\n\n");
+    printf("Insira uma letra de 'A' a 'H': ");
+    scanf(" %c", &estado2); // Espaço para que o enter não seja lido como o caractere escolhido
+    printf("A letra do estado seguida de um número de 01 a 04. Ex: A01, B03: ");
+    scanf("%s", &codigo2);
+    printf("O nome da cidade: ");
+    scanf("%s", &cidade2);
+    printf("O número de habitantes da cidade: ");
+    scanf("%d", &populacao2);
+    printf("A área da cidade em quilômetros quadrados: ");
+    scanf("%f", &area2);
+    printf("O Produto Interno Bruto da cidade (em bilhões de reais): ");
+    scanf("%f", &pib2);
+    printf("A quantidade de pontos turísticos na cidade: ");
+    scanf("%d", &turismo2);
 
     /*Calcular a Densidade Populacional: Divida a população da cidade pela sua área. O resultado será a densidade populacional, que representa o número de habitantes por quilômetro quadrado. Armazene esse valor em uma variável do tipo float.*/
 
@@ -188,7 +188,7 @@ int main()
 
         printf("*** Resultado da rodada ***\n");
         printf("Com o total de %.2f da carta 1 e %.2f da carta 2:\n", somaCarta1, somaCarta2);
-        somaCarta1 > somaCarta2 ? printf("Carta 1 venceu!\n") : printf("Carta 2 venceu!");
+        somaCarta1 > somaCarta2 ? printf("Carta 1 venceu!\n") : printf("Carta 2 venceu!\n");
     }
 
     return 0;
